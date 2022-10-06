@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, course, css, tags">
+    <meta name="description" content="Это базовый курс по HTML" >
+    <title>Моя визитка</title>
+    <style> 
+        .header {border-bottom: 2px solid darkblue}
+        .footer {border-top: 2px solid darkblue}
+        .card {
+            background-color: rgb(243, 239, 239);
+            padding: 10px;
+            margin: 10px;
+        }
+        .color {color: red}
+    </style>
+
+</head>
+<body>
+    <header  class="card">
+        <img src="Images/photo.jpg" width="250vw" alt="image">
+        <h1>Разрешите представиться: Ким Валерий Геннадьевич</h1>
+        <hr color="grey">
+    </header>
+    
+    <article>
+        <h3><strong>Немного о себе.</strong></h3>
+        <br>
+        <p> <strong> Возраст:</strong>       <em> 52 года</em></p>
+        <p> <strong> Пол:</strong>            <em> ни капли сомнения</em></p>
+        <p> <strong> Семья:</strong>            <em> всегда</em></p>
+        <p> <strong> Дети:</strong>            <em> 5 (хотелось бы еще, но поздновато)</em></p>
+        <p> <strong> Образование:</strong>    <em> высшее (2,2)</em> - базовое техническое, менеджмент, незаконченное духовное.</p>
+        <br>
+        
+        <h3>Вехи трудового пути...</h3>
+        <table width="550">
+            <Thead>
+                <tr>
+                    <th>Где</th>
+                    <th>Кем</th>
+                    <th>Когда</th>
+                </tr>
+                </Thead>
+                <tr>
+                    <td>ЧПО "Электрохимпром"</td>
+                    <td>Ведущий программист</td>
+                    <td>Давным давно...</td>
+                </tr>
+                <tr>
+                    <td>ООО "Евросеть"</td>
+                    <td>Начальник сервис-центра</td>
+                    <td>2005-2008</td>
+                </tr>
+                <tr>
+                    <td>ООО "Капитал Сугурта"</td>
+                    <td>Директор ИТ депертамента</td>
+                    <td>2012-2017</td>
+                </tr>
+                <tr>
+                    <td>ООО "ASKLEPIY Distribution"</td>
+                    <td>Директор ИТ</td>
+                    <td>2017-2018</td>
+                </tr>
+                <tr>
+                    <td>MDIS Tashkent</td>
+                    <td>Manager IT</td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr>
+                    <td>OOO "Unicon Soft"</td>
+                    <td>Руководитель проектов</td>
+                    <td>2022-по н.в.</td>
+                </tr>
+                <tfoot>
+        
+                </tfoot>
+        </table>
+        <h3>Мои увлечения:</h3>
+        <ul>
+            <li>книги</li>
+            <li>походы</li>
+            <li>мечевое фехтование и пр."рукомашество и дрыгоножество"</li>
+            <li>гитара и свирель</li>
+            <li>"куховарение"</li>
+            <li>всякое рукоделие</li>
+        </ul>
+        
+    </article>
+    
+    <footer class="card">
+        <hr color="grey">
+        <h4>Как со мной связаться:</h4>
+        
+        <a href="https://t.me/kim_valeriy" target="_blank">Telegram</a>
+        |
+        <a href="https://wa.me/998901780948" target="_blank">Whatsup</a>
+        
+        <h4>Отправить мне сообщение:</h4>
+        <div>
+            <label for="text">Ваше имя:</label>
+            <!-- <input type="text" id="text" value="Текст по умолчанию" readonly> -->
+            <input type="text" id="text" placeholder="Введите Ваше имя">
+        </div>
+
+        <div>
+            <label for="email">"Email                :"</label>
+            <input type="email" id="email" placeholder="Введите Ваш Email">
+        </div>
+
+        <div>
+            <label for="message">Текст сообщения:</label>
+            <br>
+            <textarea id="message" cols="50" rows="3" placeholder="Введите текст сообщения."></textarea>
+        </div>
+
+        <button type="submit">Отправить сообщение</button>
+    </footer>
+</body>
+</html>
